@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -28,6 +29,7 @@
                 
             </div>
             <div class="header__info">
+                
                 <div class="container">
                     <div class="info">
                         <div class="info-logo">
@@ -39,25 +41,25 @@
                                     <a href="#" class="link-home">Home</a>
                                 </li>
                                 <li class="menu-link">
-                                    <a href="#" >About us</a>
+                                    <a href="#about" >About us</a>
                                 </li>
                                 <li class="menu-link">
-                                    <a href="#" >services</a>
+                                    <a href="#services" >services</a>
                                 </li>
                                 <li class="menu-link">
-                                    <a href="#" >why us?</a>
+                                    <a href="#why" >why us?</a>
                                 </li>
                                 <li class="menu-link">
-                                    <a href="#" >Security</a>
+                                    <a href="#security" >Security</a>
                                 </li>
                                 <li class="menu-link">
-                                    <a href="#" >Case studies</a>
+                                    <a href="#case" >Case studies</a>
                                 </li>
                                 <li class="menu-link">
-                                    <a href="#" >faq's</a>
+                                    <a href="#faq" >faq's</a>
                                 </li>
                                 <li class="menu-link">
-                                    <a href="#" >contacts us</a>
+                                    <a href="#contact" >contacts us</a>
                                 </li>
                             </ul>
                         </nav>
@@ -81,19 +83,80 @@
             
         </header>
         <main class="main">
-            <section class="main__banner banner">
-                <div class="container">
-                    <div class="banner__announs announs">
-                        <div class="announs__for">For Physicians</div>
-                        <h1 class="announs__title">Our Promise</h1>
-                        <h2 class="announs__text">90% First Pass payment within 30 days @up to 3% of collected revenue.</h2>
-                        <div class="announs__button">
-                            <a href="#" class="button">REACH US</a>
+            <section class="main__banner">
+
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div class="banner banner-image-one">
+                            <div class="container">
+                                <div class="banner__announs announs">
+                                    <div class="announs__for">For Physicians</div>
+                                    <h1 class="announs__title">Our Promise</h1>
+                                    <h2 class="announs__text">90% First Pass payment within 30 days @up to 3% of collected revenue.</h2>
+                                    <div class="announs__button">
+                                        <a href="#" class="button">REACH US</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+
+                      <div class="swiper-slide">
+                        <div class="banner banner-image-two">
+                            <div class="container">
+                                <div class="banner__announs announs">
+                                    <div class="announs__for">For Nurses</div>
+                                    <h1 class="announs__title">Our Hope</h1>
+                                    <h2 class="announs__text">90% First Pass payment within 30 days @up to 3% of collected revenue.</h2>
+                                    <div class="announs__button">
+                                        <a href="#" class="button">REACH US</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      
+                      <div class="swiper-slide">
+                        <div class="banner banner-image-three">
+                            <div class="container">
+                                <div class="banner__announs announs">
+                                    <div class="announs__for">For Doctors</div>
+                                    <h1 class="announs__title">Our Love</h1>
+                                    <h2 class="announs__text">90% First Pass payment within 30 days @up to 3% of collected revenue.</h2>
+                                    <div class="announs__button">
+                                        <a href="#" class="button">REACH US</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev">
+                        <div class="arrow-left">
+                            <img src="./image/icon/arrow-left.svg" alt="left">
                         </div>
                     </div>
+
+                    <div class="swiper-button-next">
+                        <div class="arrow-right">
+                            <img src="./image/icon/arrow-right.svg" alt="right">
+                        </div>
+                    </div>
+                  
+                   
                 </div>
+               
+                
             </section>
-            <section class="main__about about">
+            <section class="main__about about" id="about">
                 <div class="container">
                     <div class="about-main">
                         <div class="about-main__us">
@@ -107,7 +170,7 @@
                             </div>
 
                         </div>
-                        <div class="about-main__why why">
+                        <div class="about-main__why why" id="why">
                             <div class="main-title">Why us?</div>
                             <div class="why-cards">
                                 <div class="why-card card-one">
@@ -154,18 +217,49 @@
                     </div>
                 </div>
             </section>
-            <section class="main__benefits benefits">
+            <section class="main__benefits benefits" id="case">
                 <div class="benefits__left">
                     <div class="benefits-tabs">
-                        <div class="benefits-tab"> <a href="#">For Physicians and Group Practice:</a> </div>
-                        <div class="benefits-tab"><a href="#">For Medical Billing Companies/Hospitals:</a></div>
-                        <div class="benefits-tab"> <a href="#">You Stay in Control:</a> </div>
+                        <a href="#tab_0"><div class="benefits-tab"> For Physicians and Group Practice</div></a>
+                        <a href="#tab_0"><div class="benefits-tab">For Medical Billing Companies/Hospitals</div></a>
+                        <a href="#tab_0"> <div class="benefits-tab">You Stay in Control</div></a>
                     </div>
                 </div>
                 <div class="benefits__right">
-                    <div class="benefits-card">
+                    <div class="benefits-card" id="tab_01">
                         <div class="benefits-title main-title">Benefits</div>
                         <div class="benefits-subtitle main-subtitle">For Physicians and Group Practice</div>
+                        <div class="benefits-text">
+                            <ul class="benefits-list">
+                                <li class="benefits-item">90% first pass payment within 30 days, at 3% Billing charges.</li>
+                                <li class="benefits-item">Increase of 15-20% in monthly collected revenue.</li>
+                                <li class="benefits-item">Expert teams with vast knowledge and experience who will follow up every claim to zero balance.</li>
+                                <li class="benefits-item">Services spanning coding review, claims and payment processing, as well as Insurance and patient follow up.</li>
+                            </ul>
+                        </div>
+                        <div class="benefits-button">
+                            <a href="#" class="button">read more</a>
+                        </div>
+                    </div>
+                    <div class="benefits-card" id="tab_02">
+                        <div class="benefits-title main-title">For Medical Billing Companies/Hospitals.</div>
+                        <div class="benefits-subtitle main-subtitle">Lorem ipsum dolor sit amet.</div>
+                        <div class="benefits-text">
+                            <ul class="benefits-list">
+                                <li class="benefits-item">90% first pass payment within 30 days, at 3% Billing charges.</li>
+                                <li class="benefits-item">Increase of 15-20% in monthly collected revenue.</li>
+                                <li class="benefits-item">Expert teams with vast knowledge and experience who will follow up every claim to zero balance.</li>
+                                <li class="benefits-item">Services spanning coding review, claims and payment processing, as well as Insurance and patient follow up.</li>
+                               
+                            </ul>
+                        </div>
+                        <div class="benefits-button">
+                            <a href="#" class="button">read more</a>
+                        </div>
+                    </div>
+                    <div class="benefits-card" id="tab_03">
+                        <div class="benefits-title main-title">You Stay in Control</div>
+                        <div class="benefits-subtitle main-subtitle">For Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                         <div class="benefits-text">
                             <ul class="benefits-list">
                                 <li class="benefits-item">90% first pass payment within 30 days, at 3% Billing charges.</li>
@@ -183,15 +277,13 @@
             <section class="main__staff staff">
                 <div class="container">
                     <div class="staff-container">
-                        <div class="main__services services">
+                        <div class="main__services services" id="services">
                             <div class="services-title main-title">Our Services</div>
                             <div class="services-subtitle main-subtitle">Our staff extension services include</div>
                             <div class="services-tabs">
-                                <div class="services-item">
-                                    <div class="services-name">Coding Services</div>
-                                    <div class="services-close"></div>
-                                </div>
-                                <div class="services-card">
+                                
+                                <div class="services-item">Coding Services </div>
+                                <div class="services_card">
                                     <div class="services-card-image">
                                         <img src="./image/main/stetoscop.png" alt="icon">
                                     </div>
@@ -202,17 +294,38 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="services-item">
-                                    <div class="services-name">Credentialing</div>
-                                    <div class="services-open"></div>
+
+
+                                <div class="services-item">Credentialing </div>
+                                <div class="services_card">
+                                    <div class="services-card-image">
+                                        <img src="./image/main/thermometer.jpg" alt="icon">
+                                    </div>
+                                    <div class="services-card-info">
+                                        <div class="services-text">Sample medical text with various types of entities highlighted, including personal information (purple), past and current diagnoses (orange) are not shown..</div>
+                                        <div class="services-more">
+                                            <a href="#">READ MORE</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="services-item">
-                                    <div class="services-name">HCC Maangement Services</div>
-                                    <div class="services-open"></div>
+
+
+                                <div class="services-item">HCC Maangement Services </div>
+                                <div class="services_card">
+                                    <div class="services-card-image">
+                                        <img src="./image/main/ambulance.jpg" alt="icon">
+                                    </div>
+                                    <div class="services-card-info">
+                                        <div class="services-text">Vast amounts of medical information are still recorded as unstructured text. The knowledge contained in this potential to improve clinical routine care, to support clinical research, and to advance personalization of medicine.</div>
+                                        <div class="services-more">
+                                            <a href="#">READ MORE</a>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
-                        <div class="main__security">
+                        <div class="main__security" id="security">
                             <div class="security-title main-title">Security</div>
                             <div class="security-subtitle main-subtitle">POLI Compliance</div>
                             <div class="security-image">
@@ -229,7 +342,7 @@
             </section>
             <section class="main__test">
                 <div class="container">
-                    <div class="test-container">
+                    <div class="test-container" id="faq">
                         <div class="test-statistic">
                             <div class="test-title">Testimonials</div>
                             <div class="test-subtitle">What people say?</div>
@@ -324,7 +437,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="footer__contacts">
+                        <div class="footer__contacts" id="contact">
                             <div class="footer__contacts-card footer-card-one">
                                 <div class="contacts-card__title">US Address</div>
                                 <a href="#" class="contacts-card__link">
@@ -360,7 +473,9 @@
             </div>
         </footer>
     </div>
-    
+   
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/script.js"></script>
     
 </body>
 </html>

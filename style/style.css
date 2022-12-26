@@ -129,9 +129,39 @@ body {
 
 /*******************************************MAIN***************************/
 
-.main__banner {
-    background: url(../image/main/banner.png) 0 0/cover no-repeat;
+.banner {
     min-height: 647px;
+    position: relative;
+}
+
+.banner-image-one {
+    background: url(../image/main/banner.png) 0 0/cover no-repeat;
+}
+.banner-image-two {
+    background: url(../image/main/main-2.jpg) 0 0/cover no-repeat;
+}
+.banner-image-three {
+    background: url(../image/main/main-3.jpg) center/cover no-repeat;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    display: none;
+    
+}
+
+
+
+.arrow-left {
+    position: absolute;
+    z-index: 5;
+    left: 90px;
+    top: 50%;
+}
+.arrow-right {
+    position: absolute;
+    z-index: 6;
+    right: 90px;
+    top: 50%;
 }
 
 .banner__announs {
@@ -279,8 +309,8 @@ body {
     display: flex;
 }
 
+
 .benefits__left {
-    
     width: 50%;
     background: url(../image/main/doctor.png) 0 0/cover no-repeat;
     min-height: 504px;
@@ -297,7 +327,7 @@ body {
    top: 87px;
 }
 
-.benefits-tab a {
+.benefits-tab {
     display: inline-block;
     font-weight: 700;
     font-size: 22px;
@@ -308,12 +338,16 @@ body {
     width: 474px;
     padding-left: 35px;
     transition: all 0.3s ease 0s;
-
+    cursor: pointer;
 }
 
-.benefits-tab a:hover {
-    color: #000;
+.benefits-tabs a {
+    color: #fff;
+}
+
+.benefits-tab:hover {
     background: rgba(255, 255, 255, 0.9);
+    color: #000;
 }
 
 .benefits__right {
@@ -325,8 +359,24 @@ body {
     padding-top: 77px;
     padding-left: 53px;
     max-width: 496px;
+    /* display: none; */
 }
 
+/* .benefits-card:target {
+    display: block;
+} */
+
+.main__benefits .hide {
+    display: none;
+  }
+  .main__benefits   .show {
+    display: flex;
+  }
+
+  .benefits-card {
+    display: flex;
+    flex-direction: column;
+  }
 
 .benefits-title {
     margin-bottom: 10px;
@@ -370,6 +420,7 @@ body {
 
 .staff-container {
     display: flex;
+    
 }
 
 .main__services {
@@ -389,48 +440,43 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 25px 0;
     border-bottom: 1px solid #979797;
-}
-
-
-.services-name {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.1;
     color: #0E77AF;
 }
 
-.services-close {
-    width: 18px;
-    height: 2.77px;
-    background-color: #000;
-    
+.active, .services-item {
+    background-color: #fff;
 }
 
-.services-open {
-    width: 18px;
-    height: 2.77px;
-    background-color: #000;
-    position: relative;
+.services-item:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    font-size: 32px;
+    color: rgb(27, 25, 25);
+    float: right;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
-.services-open::after {
-    content:'';
-    width: 2.77px;
-    height: 18px;
-    background-color:#000;
-    position: absolute;
-    bottom: -6.6px;
-    left: 8.6px;
+.active:after {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
+    cursor: pointer;
 }
 
-
-.services-card {
-    display: flex;
+.services_card {
+    display: none;
+    overflow: hidden;
     align-items: center;
     text-align: left;
     margin-top: 32px;
+    
+}
+
+.services_card:last-child {
+    margin-bottom: 20px;
 }
 
 .services-card-image img {
